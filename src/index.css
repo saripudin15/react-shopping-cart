@@ -132,4 +132,15 @@ footer{
   background-color: #EEA47FFF;
 }
 
- 
+/* Filter */
+.filter{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  margin: 1rem;
+  border-bottom: .1rem solid #c0c0c0;
+}
+
+.filter div {
+  flex: 1;
+}
