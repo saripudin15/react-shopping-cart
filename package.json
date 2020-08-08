@@ -1,5 +1,6 @@
 {
   "name": "react-shopping-cart",
+  "proxy": "http://localhost:5000",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -12,6 +13,12 @@
     "nodemon": "^2.0.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-modal": "^3.11.2",
+    "react-redux": "^7.2.1",
+    "react-reveal": "^1.2.2",
+    "react-scripts": "^3.4.1",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0"
   },
   "scripts": {
     "server": "nodemon server.js",
@@ -34,5 +41,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "shortid": "^2.2.15"
   }
 }

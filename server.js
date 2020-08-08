@@ -3,32 +3,16 @@ const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const shortid = require("shortid");
 
-const app = express()
+const app = express();
 app.use(bodyParser.json());
 
-mongoose.connect("mongodb://localhost/react-shopping-cart-db",{
+mongoose.connect("mongodb://localhost/react-shopping-cart-db",
+{
     useNewUrlParser: true,
     useCreateIndex: true,
     useUnifiedTopology: true,
-});
-
-// mongoose.connect("mongodb://127.0.0.1:27017/react-shopping-cart-db",{
-//         useCreateIndex:true,
-//         useNewUrlParser: true,
-//         useUnifiedTopology: true}).then(()=> {
-// console.log('Database Successfully Connected')},error =>{
-// console.log(error)});
-
-// const db = mongoose.connect("mongodb://localhost/react-shopping-cart-db", 
-//     {
-//     useUnifiedTopology: true,
-//     useNewUrlParser: true,
-//     useCreateIndex: true,
-//     }).then(() => {
-//     console.log("Connected To Mongo Db DataBase");
-//     }).catch((err) => {
-//     console.log("DataBase Connection Error " + err);
-//     });
+}
+);
 
 
 const Product = mongoose.model(
